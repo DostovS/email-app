@@ -1,7 +1,6 @@
 import axios from "../plugins/axios";
 import BaseCard from "../components/BaseCard";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 
 function Login() {
   const inputUsername = useRef();
@@ -45,9 +44,9 @@ function Login() {
           />
         </div>
         <div>
-          <Link className="btn btn-success" type="submit">
+          <button className="btn btn-success" type="submit" to="/">
             Submit
-          </Link>
+          </button>
         </div>
       </BaseCard>
     </form>
